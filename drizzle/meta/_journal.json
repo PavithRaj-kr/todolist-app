@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1771244915641,
+      "tag": "0000_modern_leader",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1771326728294,
+      "tag": "0001_icy_the_enforcers",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771389055881,
+      "tag": "0002_smooth_loa",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1771393130697,
+      "tag": "0003_oval_silk_fever",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1771398250073,
+      "tag": "0004_flowery_earthquake",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1771407623150,
+      "tag": "0005_shiny_boomerang",
+      "breakpoints": true
+    }
+  ]
+}

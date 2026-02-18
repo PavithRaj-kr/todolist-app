@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #feeac9;
+  /* User requested Warm Cream */
+  --foreground: #4a3b32;
+  /* Dark Warm Brown */
+  --primary: #d97706;
+  /* Warm Amber/Orange */
+  --primary-foreground: #ffffff;
+  --muted: #8c7e72;
+  /* Warm Gray */
+  --border: #e6dcc6;
+  /* Darker Cream */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fce9d6;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Custom Scrollbar for Chat */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #52525b;
+  /* zinc-600 */
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
+  /* zinc-500 */
+}
+
+/* Animations matching tailwindcss-animate utility names roughly */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-in-from-bottom-4 {
+  animation-name: slideInFromBottom;
+}
