@@ -57,7 +57,7 @@ export default function LoginPage() {
           <div className="mx-auto w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-4 shadow-lg shadow-primary/30">
             <span className="text-2xl">⚡</span>
           </div>
-          <h1 className="text-3xl font-bold text-stone-800">Welcome Back</h1>
+          <h1 className="text-3xl font-bold text-stone-800">Welcome to TaskFlow</h1>
           <p className="text-stone-500 mt-2">Sign in to your account</p>
         </div>
 
